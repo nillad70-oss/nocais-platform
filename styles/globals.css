@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --amber:#BA7517; --amber-light:#FAEEDA; --amber-mid:#EF9F27;
+  --navy:#0A2028; --navy-mid:#1A3A48;
+  --teal:#0F6E56; --teal-light:#E1F5EE;
+  --gold:#B8892A; --gold-light:#F5E6C0;
+  --cream:#FDFAF5; --white:#FFFFFF;
+  --text-dark:#0A2028; --text-mid:#2A4A3A; --text-muted:#6B8A7A;
+  --border:#D5E8DC;
+}
+html{scroll-behavior:smooth;}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--cream);color:var(--text-dark);line-height:1.6;}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-track{animation:marquee 30s linear infinite;}
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
